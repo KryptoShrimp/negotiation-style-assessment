@@ -1,0 +1,77 @@
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(207, 184, 124, 0.2);
+    /* CU Gold with alpha */
+    color: var(--cu-gold);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    animation-delay: 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.title-glow {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 40px rgba(207, 184, 124, 0.4);
+    animation-delay: 0.2s;
+    color: var(--cu-white);
+}
+
+.subtitle {
+    margin: 0 auto 2.5rem;
+    font-size: 1.125rem;
+    animation-delay: 0.3s;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    animation-delay: 0.4s;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--cu-light-gray);
+    font-weight: 500;
+}
+
+.feature .icon {
+    font-size: 1.5rem;
+}
+
+.start-btn {
+    font-size: 1.25rem;
+    padding: 1.25rem 3rem;
+    animation-delay: 0.5s;
+}
+
+@media (max-width: 640px) {
+    .title-glow {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -33,6 +33,12 @@
     color: var(--cu-white);
 }
 
+@media (max-width: 768px) {
+    .title-glow {
+        font-size: 3rem;
+    }
+}
+
 .subtitle {
     margin: 0 auto 2.5rem;
     font-size: 1.125rem;
@@ -66,8 +72,15 @@
 }
 
 @media (max-width: 640px) {
+    .start-btn {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 640px) {
     .title-glow {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .features {

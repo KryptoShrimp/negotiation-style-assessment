@@ -5,6 +5,12 @@
     padding: 2rem;
 }
 
+@media (max-width: 640px) {
+    .results-container {
+        padding: 1rem;
+    }
+}
+
 .mb-2 {
     margin-bottom: 0.5rem;
 }
@@ -22,6 +28,18 @@
     font-weight: 900;
     margin-bottom: 1rem;
     color: var(--cu-white);
+}
+
+@media (max-width: 768px) {
+    .style-name {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .style-name {
+        font-size: 2rem;
+    }
 }
 
 .outcome-badge {
@@ -43,6 +61,13 @@
     color: var(--cu-light-gray);
 }
 
+@media (max-width: 640px) {
+    .style-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .score-summary {
     display: inline-flex;
     flex-direction: column;
@@ -55,12 +80,24 @@
     margin: 0 auto;
 }
 
+@media (max-width: 640px) {
+    .score-summary {
+        padding: 1rem 2rem;
+    }
+}
+
 .score-value {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--cu-gold);
     line-height: 1;
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .score-value {
+        font-size: 2rem;
+    }
 }
 
 .score-label {
@@ -160,5 +197,6 @@
 @media (max-width: 768px) {
     .details-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }

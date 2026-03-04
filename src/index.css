@@ -64,11 +64,23 @@ h1 {
   color: var(--cu-black);
 }
 
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: var(--cu-black);
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -83,12 +95,25 @@ p {
   margin: 0 auto 2rem;
 }
 
+@media (max-width: 640px) {
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Layout Utilities */
 .container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
 }
 
 /* Glassmorphism Panel */
@@ -100,6 +125,12 @@ p {
   border-radius: var(--radius-lg);
   padding: 3rem;
   box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 640px) {
+  .glass-panel {
+    padding: 1.5rem;
+  }
 }
 
 /* Buttons */
